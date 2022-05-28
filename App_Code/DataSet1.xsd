@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsPropertyName="shaadi_bandhanConnectionString" ConnectionStringObject="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\shaadi_bandhan.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True" IsAppSettingsProperty="false" Modifier="Assembly" Name="shaadi_bandhanConnectionString" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="shaadi_bandhanConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="shaadi_bandhanConnectionString1 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.shaadi_bandhanConnectionString1.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="match_viewTableAdapter" GeneratorDataComponentClassName="match_viewTableAdapter" Name="match_view" UserDataComponentName="match_viewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="shaadi_bandhanConnectionString1 (Web.config)" DbObjectName="dbo.match_view" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT name, age, country, city, gender, manglik1, email_id, image, maritial_status, describe_yourself, height, education_level, minh, maxh, preferred_minage, preferred_maxage FROM dbo.match_view</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="name" DataSetColumn="name" />
+              <Mapping SourceColumn="age" DataSetColumn="age" />
+              <Mapping SourceColumn="country" DataSetColumn="country" />
+              <Mapping SourceColumn="city" DataSetColumn="city" />
+              <Mapping SourceColumn="gender" DataSetColumn="gender" />
+              <Mapping SourceColumn="manglik1" DataSetColumn="manglik1" />
+              <Mapping SourceColumn="email_id" DataSetColumn="email_id" />
+              <Mapping SourceColumn="image" DataSetColumn="image" />
+              <Mapping SourceColumn="maritial_status" DataSetColumn="maritial_status" />
+              <Mapping SourceColumn="describe_yourself" DataSetColumn="describe_yourself" />
+              <Mapping SourceColumn="height" DataSetColumn="height" />
+              <Mapping SourceColumn="education_level" DataSetColumn="education_level" />
+              <Mapping SourceColumn="minh" DataSetColumn="minh" />
+              <Mapping SourceColumn="maxh" DataSetColumn="maxh" />
+              <Mapping SourceColumn="preferred_minage" DataSetColumn="preferred_minage" />
+              <Mapping SourceColumn="preferred_maxage" DataSetColumn="preferred_maxage" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet1" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="match_view" msprop:Generator_UserTableName="match_view" msprop:Generator_RowDeletedName="match_viewRowDeleted" msprop:Generator_TableClassName="match_viewDataTable" msprop:Generator_RowChangedName="match_viewRowChanged" msprop:Generator_RowClassName="match_viewRow" msprop:Generator_RowChangingName="match_viewRowChanging" msprop:Generator_RowEvArgName="match_viewRowChangeEvent" msprop:Generator_RowEvHandlerName="match_viewRowChangeEventHandler" msprop:Generator_TablePropName="match_view" msprop:Generator_TableVarName="tablematch_view" msprop:Generator_RowDeletingName="match_viewRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" msprop:Generator_UserColumnName="name" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInTable="nameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="age" msprop:Generator_UserColumnName="age" msprop:Generator_ColumnPropNameInRow="age" msprop:Generator_ColumnVarNameInTable="columnage" msprop:Generator_ColumnPropNameInTable="ageColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="country" msprop:Generator_UserColumnName="country" msprop:Generator_ColumnPropNameInRow="country" msprop:Generator_ColumnVarNameInTable="columncountry" msprop:Generator_ColumnPropNameInTable="countryColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="city" msprop:Generator_UserColumnName="city" msprop:Generator_ColumnPropNameInRow="city" msprop:Generator_ColumnVarNameInTable="columncity" msprop:Generator_ColumnPropNameInTable="cityColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="gender" msprop:Generator_UserColumnName="gender" msprop:Generator_ColumnPropNameInRow="gender" msprop:Generator_ColumnVarNameInTable="columngender" msprop:Generator_ColumnPropNameInTable="genderColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="manglik1" msprop:Generator_UserColumnName="manglik1" msprop:Generator_ColumnPropNameInRow="manglik1" msprop:Generator_ColumnVarNameInTable="columnmanglik1" msprop:Generator_ColumnPropNameInTable="manglik1Column">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="email_id" msprop:Generator_UserColumnName="email_id" msprop:Generator_ColumnPropNameInRow="email_id" msprop:Generator_ColumnVarNameInTable="columnemail_id" msprop:Generator_ColumnPropNameInTable="email_idColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="image" msprop:Generator_UserColumnName="image" msprop:Generator_ColumnPropNameInRow="image" msprop:Generator_ColumnVarNameInTable="columnimage" msprop:Generator_ColumnPropNameInTable="imageColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="maritial_status" msprop:Generator_UserColumnName="maritial_status" msprop:Generator_ColumnPropNameInRow="maritial_status" msprop:Generator_ColumnVarNameInTable="columnmaritial_status" msprop:Generator_ColumnPropNameInTable="maritial_statusColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="describe_yourself" msprop:Generator_UserColumnName="describe_yourself" msprop:Generator_ColumnPropNameInRow="describe_yourself" msprop:Generator_ColumnVarNameInTable="columndescribe_yourself" msprop:Generator_ColumnPropNameInTable="describe_yourselfColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="height" msprop:Generator_UserColumnName="height" msprop:Generator_ColumnPropNameInRow="height" msprop:Generator_ColumnVarNameInTable="columnheight" msprop:Generator_ColumnPropNameInTable="heightColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="education_level" msprop:Generator_UserColumnName="education_level" msprop:Generator_ColumnPropNameInRow="education_level" msprop:Generator_ColumnVarNameInTable="columneducation_level" msprop:Generator_ColumnPropNameInTable="education_levelColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="minh" msdata:ReadOnly="true" msprop:Generator_UserColumnName="minh" msprop:Generator_ColumnPropNameInRow="minh" msprop:Generator_ColumnVarNameInTable="columnminh" msprop:Generator_ColumnPropNameInTable="minhColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="maxh" msdata:ReadOnly="true" msprop:Generator_UserColumnName="maxh" msprop:Generator_ColumnPropNameInRow="maxh" msprop:Generator_ColumnVarNameInTable="columnmaxh" msprop:Generator_ColumnPropNameInTable="maxhColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="preferred_minage" msprop:Generator_UserColumnName="preferred_minage" msprop:Generator_ColumnPropNameInRow="preferred_minage" msprop:Generator_ColumnVarNameInTable="columnpreferred_minage" msprop:Generator_ColumnPropNameInTable="preferred_minageColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="preferred_maxage" msprop:Generator_UserColumnName="preferred_maxage" msprop:Generator_ColumnPropNameInRow="preferred_maxage" msprop:Generator_ColumnVarNameInTable="columnpreferred_maxage" msprop:Generator_ColumnPropNameInTable="preferred_maxageColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:match_view" />
+      <xs:field xpath="mstns:email_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

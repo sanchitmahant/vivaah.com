@@ -1,0 +1,121 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   <title>Vivaah.Com</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript">
+function clearText(field)
+{
+if (field.defaultValue == field.value) field.value = '';
+else if (field.value == '') field.value = field.defaultValue;
+}
+</script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+        </head>
+<body>
+    <form id="form1" runat="server">
+    <div id="container">
+  <div id="header">
+      <div id="login_box">
+     
+        
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     
+        
+          <a href="basic_info.aspx" >Sign up</a> </div>
+
+    <!-- end of login box -->
+  </div>
+  <!-- end of header -->
+  <div id="menu">
+    <ul>
+      <li><a href="Default.aspx" class="current">Home</a></li>
+      <li><a href="search.aspx" >Search</a></li>
+      <li><a href="submit_successive.aspx" >Successful Stories</a></li>
+      <li><a href="basic_info.aspx">Create New Profile</a></li>
+       
+      <li><a href="Gallery.aspx">Gallery</a></li>
+      <li><a href="login_info.aspx">Login</a></li>
+      <li><a href="contact.aspx" >Contact Us</a></li>
+    </ul>
+  </div>
+  <!-- end of menu -->
+  <div id="content">
+      <br />
+    <div id="content_left">
+   
+   <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+   
+   
+   
+    </div>
+    <!-- end of content left -->
+    <div id="content_right">
+     
+      <!-- end of quick search -->
+        <br />
+        <br />
+        
+      <div class="content_right_section"> 
+        <span>
+          <br />
+          <br />
+        </span> 
+        <h1 style="font-style: italic; font-family: 'Comic Sans MS'; font-size: large;">NEW MARRIED COUPLES</h1>
+       <marquee direction="up" speed="8px" style="height: 355px">
+      <img src="images/18.JPG" alt="" />
+      <img src="images/55.jpg" alt="" />
+      <img src="images/70.jpg" alt="" />
+      <img src="images/87.jpg" alt="" />
+      <img src="images/s5.JPG" alt="" />
+      <img src="images/s10.JPG" alt="" />
+      
+    
+       </marquee>
+       </div> 
+      <div class="cleaner">&nbsp;<br />
+                        </div>
+       &nbsp;</div>
+    </div>
+    <!-- end of content right -->
+    <div class="cleaner_with_height">&nbsp;
+    <div style="height: 63px">
+    <marquee direction="left" speed="8px">
+        <asp:Image ID="Image1" runat="server" Height="63px" Width="100px" 
+            ImageUrl="~/images/b2 - Copy.jpg" />
+        <asp:Image ID="Image2" runat="server" Height="63px" Width="100px" 
+            ImageUrl="~/images/bangles.jpg" />
+            <asp:Image ID="Image3" runat="server" Height="63px" Width="100px" 
+            ImageUrl="~/images/DSC_0122.JPG" />
+        <asp:Image ID="Image4" runat="server" Height="63px" Width="100px" 
+          Imageurl="~/images/marry1%20(5).jpg" />
+        <asp:Image ID="Image5" runat="server" Height="63px" Width="100px" 
+        Imageurl="~/images/pic10.jpg" />
+        <asp:Image ID="Image6" runat="server" Height="63px" Width="100px" 
+        Imageurl="~/images/happy3.jpg" />
+        <asp:Image ID="Image7" runat="server" Height="63px" Width="100px" 
+        Imageurl="~/images/happy2.jpg" />
+        <asp:Image ID="Image8" runat="server" Height="63px" Width="100px"
+        Imageurl="~/images/pic6.jpg" /></marquee></div>
+ </div>
+    </div>
+  <!-- end of content -->
+  <div id="footer">
+    
+    <a href="Default.aspx" >Home</a> | <a href="search.aspx" >Search</a> | <a href="teams.aspx">Terms of use</a> | <a href="privacy.aspx">Privacy Policies</a> | <a href="faq.aspx">FAQs</a> | <a href="contact.aspx" >Contact Us</a><br />
+    Copyright &copy; 2022 <a href="#"><strong> Vivaah.com</strong></a> | Designed by <a href="#">Sanchit & Harman</a> </div>
+  <!-- end of footer -->
+
+  <!-- end of container -->  
+  </form>
+   
+    
+</body>
+</html>

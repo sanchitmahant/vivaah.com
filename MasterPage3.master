@@ -1,0 +1,158 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage3.master.cs" Inherits="MasterPage3" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+   <title>Vivaah.Com</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript">
+function clearText(field)
+{
+if (field.defaultValue == field.value) field.value = '';
+else if (field.value == '') field.value = field.defaultValue;
+}
+</script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+        <style type="text/css">
+            .style1
+            {
+                width: 914px;
+            }
+        </style>
+        </head>
+<body>
+    <form id="form1" runat="server">
+    <div id="container">
+  <div id="header">
+      <div id="login_box">
+    
+      
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+      
+      <a href="#">Sign up</a> </div>
+    <!-- end of login box -->
+  </div>
+  <!-- end of header -->
+  <div id="menu">
+    <ul>
+      <li><a href="Default.aspx" class="current">Home</a></li>
+      <li><a href="search.aspx" >Search</a></li>
+      <li><a href="submit_successive.aspx">Successful Stories</a></li>
+       
+      <li><a href="basic_info.aspx">Create New Profile</a></li>
+      <li><a href="gallery.aspx" >Gallery</a></li>
+      <li><a href="login_info.aspx">Login</a></li>
+      <li><a href="contact.aspx" >Contact Us</a></li>
+    </ul>
+  </div>
+  <!-- end of menu -->
+  <div id="content">
+      <br />
+      <table style="width: 101%; height: 52px;">
+            <tr>
+                <td class="style1">
+                    <asp:Menu ID="Menu2" runat="server" Height="49px" 
+                        onmenuitemclick="Menu1_MenuItemClick" Orientation="Horizontal" 
+                        Width="919px">
+                        <StaticSelectedStyle ForeColor="#CCCCCC" />
+                        <StaticMenuItemStyle BackColor="#CCCCCC" ForeColor="#CC0066" />
+                        <DynamicHoverStyle ForeColor="#CC3399" />
+                        <DynamicSelectedStyle ForeColor="#CC3399" />
+                        <DynamicMenuItemStyle ForeColor="#CC0066" />
+                        <Items>
+                            <asp:MenuItem Text="My Profile" Value="My Profile" NavigateUrl="~/profile.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="My Desired Partner" Value="My Desired Partner" 
+                                NavigateUrl="~/partnerpre_profile.aspx">
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Forward Profile" Value="forward Profile" 
+                                NavigateUrl="~/forward_profile.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Logout" Value="My Partner" NavigateUrl="~/Default.aspx"></asp:MenuItem>
+                        </Items>
+                        <StaticItemTemplate>
+                            <%# Eval("Text") %>
+                        </StaticItemTemplate>
+                    </asp:Menu>
+                </td>
+            </tr>
+        </table>
+    <div id="content_left">
+   
+   <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        <table style="width: 100%;">
+            <tr>
+                <td>
+                    
+                    &nbsp;</td>
+            </tr>
+        </table>
+        
+        </asp:ContentPlaceHolder>
+   
+   
+   
+    </div>
+    <!-- end of content left -->
+    <div id="content_right">
+     
+      <!-- end of quick search -->
+        <br />
+        <br />
+      <div class="content_right_section"> <%--<div id="templatmeo_quick_search">
+      
+       
+        <span>
+          <br />
+          <br />
+          </span> 
+       <marquee direction="up" speed="8px">
+      <font  style="font-style: oblique; text-transform: uppercase; color: #FFFFFF; font-size: medium; font-family: Algerian;">Find The Best Life Partner</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br /><br /><br />
+     <font style="color: #0046AE; font-style: normal; font-size: x-small; text-decoration: blink">Our site is a best site in the world.The main objective of this site to help the people for  search their life partner<br />
+     <br /><br />
+     <a href="basic_info.aspx" style="color: #FFFF66">Create New Profile</a><br />
+     <a href="login_info.aspx" style="color: #FFFF66">Login</a><br />
+     <a href="Gallery.aspx" style="color: #FFFF66">Gallery</a><br />
+     <a href="teams.aspx" style="color: #FFFF66">Teams and Conitions</a><br />
+     <a href="privacy.aspx" style="color: #FFFF66">Privacy Policy</a><br /><br />   </font>
+     <font style="text-transform: uppercase; font-family: 'Arial Black'; color: #003AEA;">our other matrimonial sites</font>
+    
+       </marquee></div>--%> 
+      <div class="cleaner">&nbsp;<br />
+                        </div>
+       &nbsp;</div>
+    </div>
+    <!-- end of content right -->
+    <div class="cleaner_with_height">&nbsp;
+    <div style="height: 63px">
+    <marquee direction="left" speed="8px">
+        <asp:Image ID="Image1" runat="server" Height="63px" Width="100px" 
+            ImageUrl="~/images/b2 - Copy.jpg" />
+        <asp:Image ID="Image2" runat="server" Height="63px" Width="100px" 
+            ImageUrl="~/images/bangles.jpg" />
+            <asp:Image ID="Image3" runat="server" Height="63px" Width="100px" 
+            ImageUrl="~/images/DSC_0122.JPG" />
+        <asp:Image ID="Image4" runat="server" Height="63px" Width="100px" />
+        <asp:Image ID="Image5" runat="server" Height="63px" Width="100px" />
+        <asp:Image ID="Image6" runat="server" Height="63px" Width="100px" />
+        <asp:Image ID="Image7" runat="server" Height="63px" Width="100px" />
+        <asp:Image ID="Image8" runat="server" Height="63px" Width="100px" /></marquee></div>
+ </div>
+    </div>
+  <!-- end of content -->
+  <div id="footer">
+    
+    <a href="Default.aspx" >Home</a> | <a href="search.aspx" >Search</a> | <a href="teams.aspx">Terms of use</a> | <a href="privacy.aspx">Privacy Policies</a> | <a href="faq.aspx">FAQs</a> | <a href="contact.aspx" >Contact Us</a><br />
+    Copyright &copy; 2022 <a href="#"><strong>Vivaah.com</strong></a> | Designed by <a href="#">Harman & Sanchit</a> </div>
+  <!-- end of footer -->
+</div>
+
+  <!-- end of container -->  
+  </form>
+   
+    
+</body>
+</html>
