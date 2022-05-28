@@ -123,7 +123,7 @@ else if (field.value == '') field.value = field.defaultValue;
         <img src="images/Chetan.png" />
         
          
-          <div class="name">Chetanpal Singh</div>
+          <div class="name">Ishvenpreet Singh</div>
           Age: 24<br />
           Country: India<br />
           City: Amritsar<br />
